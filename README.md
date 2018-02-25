@@ -11,3 +11,5 @@
 
 ## 概述：
 安装caffe的困难主要是它依赖的包比较多，而且版本也较杂乱，比如OPENCV, 3.0以上的版本和2.0的版本有较大差异，Python 2 和 Python 3也有很大的不同，还有CUDA和Cudnn各个版本之间有这对应关系，支持不同的显卡。这些情况带来的最大影响就是各个版本之间函数库的路径，名称之间存在的差异，也正是这个原因，使得安装Caffe会比较耗时。
+
+不过只要搞清楚了程序编译的基本概念，成功安装Caffe只是时间问题。caffe的编译是cmake,从github上clone的源代码中已经含有有一个写好的 makefile 和 makefile.confing.example，我们要做的只是依照自己电脑的具体情况，调整makefile.confing，为相应的library指明路径罢了。
